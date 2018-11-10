@@ -1,8 +1,15 @@
+function ListItem(props) {
+  return <li>{props.item}</li>;
+}; 
+
 var GroceryList = () => (
-  <div>  
+  <div> 
+    <h1> My Badass & Simple Grocery list </h1> 
     <ul>
-      <li>Maple Syrup</li>
-      <li>Orange Juice</li>
+      <ListItem item="Maple Syrup"/>
+      <ListItem item="Waffle Maker"/>
+      <ListItem item="Orange Juice"/>
+      <ListItem item="Fried-French Toast"/>
     </ul>
   </div>
 );
